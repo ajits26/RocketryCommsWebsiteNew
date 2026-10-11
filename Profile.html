@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Houston Rocketry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="site-name">Houston Rocketry</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="AboutRocketry.html">About Rocketry</a>
+            <a href="Events.html">Events</a>
+            <a href="Teams.html">Teams</a>
+            <a href="Community.html">Community</a>
+            <a href="Profile.html" id="authLink">Profile</a>
+            <button id="logoutButton" class="logout-button" type="button">Log Out</button>
+        </div>
+    </nav>
+
+    <main class="profile-page">
+        <div class="profile-card">
+            <h1>Welcome, <span id="profileName"></span></h1>
+            <p id="profileEmail"></p>
+
+            <form id="profileForm" class="profile-form">
+                <div class="form-group">
+                    <label for="history">Rocketry history</label>
+                    <textarea id="history" rows="4" placeholder="Launches, certifications, competitions..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="clubs">Clubs and teams</label>
+                    <input type="text" id="clubs" placeholder="Separate with commas">
+                </div>
+
+                <div class="form-group">
+                    <label for="portfolio">Portfolio</label>
+                    <textarea id="portfolio" rows="3" placeholder="Links to projects, photos, or builds"></textarea>
+                </div>
+
+                <button type="submit" class="login-button">Save profile</button>
+                <p id="profileMessage" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Houston Rocketry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="site-name">Houston Rocketry</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="AboutRocketry.html">About Rocketry</a>
+            <a href="Events.html">Events</a>
+            <a href="Teams.html">Teams</a>
+            <a href="Community.html">Community</a>
+            <a href="Login.html" id="authLink">Log In / Sign Up</a>
+        </div>
+    </nav>
+
+    <main class="login-page">
+        <div class="login-card">
+            <h1>Create Account</h1>
+            <p class="login-subtitle">Join the Houston Rocketry community</p>
+
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Enter your name" autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="At least 8 characters" autocomplete="new-password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm password</label>
+                    <input type="password" id="confirmPassword" placeholder="Repeat your password" autocomplete="new-password" required>
+                </div>
+
+                <button type="submit" class="login-button">Create Account</button>
+                <p id="registerMessage" aria-live="polite"></p>
+            </form>
+
+            <p class="signup-text">
+                Already have an account? <a href="Login.html">Log in</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>

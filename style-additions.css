@@ -1,0 +1,68 @@
+/* Paste at the bottom of style.css */
+
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+    background-color: #172635;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+    resize: vertical;
+}
+
+.form-group textarea:focus {
+    border: 2px solid #6aa2c5;
+}
+
+.form-group textarea::placeholder {
+    color: rgb(140, 155, 170);
+}
+
+.logout-button {
+    background: none;
+    border: 2px solid rgb(212, 221, 241);
+    border-radius: 6px;
+    color: rgb(212, 221, 241);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #a4c7dd;
+    color: rgb(13, 21, 34);
+}
+
+#loginMessage,
+#registerMessage,
+#profileMessage {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    min-height: 1.2em;
+}
+
+/* Faster nav hover (was 2s) */
+.nav-links a {
+    transition: 0.2s;
+}
+
+/* Pages: about, events, teams, community */
+.page { max-width: 800px; margin: 0 auto; padding: 50px 20px; font-family: Arial, sans-serif; }
+.page h1 { color: white; font-size: 38px; text-align: center; margin-bottom: 10px; }
+.page-intro { color: rgb(190, 205, 220); text-align: center; margin-bottom: 30px; }
+.page a, .content-card a { color: #82b6d5; }
+.content-card { background-color: #26394a; padding: 28px 32px; border-radius: 12px; margin-bottom: 20px; }
+.content-card h2 { color: white; font-size: 22px; margin: 0 0 10px; }
+.content-card p { color: rgb(190, 205, 220); line-height: 1.6; }
+.post-meta { font-size: 14px; color: rgb(140, 155, 170) !important; }
+.hero-actions { margin-top: 30px; }
+.cta { display: inline-block; background-color: #6aa2c5; color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; margin: 0 6px; }
+.cta-alt { background: none; border: 2px solid #6aa2c5; padding: 10px 20px; }
+.page .team-container { margin-top: 20px; }
